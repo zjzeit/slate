@@ -3,3 +3,4 @@ description: Slate is a theme for GitHub Pagez.
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-slate
+collections_dir: collections
