@@ -15,7 +15,7 @@
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-          <!--a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a-->
+          <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a>
 
           <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
           <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
@@ -28,18 +28,6 @@
           {% endif %}
         </header>
     </div>
-
-    <!-- NAV BAR -->
-    {% if page.showNavBar %}
-    <div id="nav_bar">
-	    <ul>
-		<li><a class="active" href="#home">Home</a></li>
-		<li><a href="./blog.html">Blog</a></li>
-		<li><a href="#contact">Contact</a></li>
-		<li><a href="#about">About</a></li>
-	    </ul>
-    </div>
-    {% endif %}
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
