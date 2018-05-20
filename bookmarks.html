@@ -1,8 +1,24 @@
 ---
 title: Bookmarks
 layout: default
+showNavBar: true
 ---
-{% for page in site.pages %}
-   aaatest
-   {{ page.url }}
+<div class="wrap-collabsible">
+{% for category in site.bookmarks %}
+  <input id="collapsible{{category.name}}" class="toggle" type="checkbox">
+  <label for="collapsible{{category.name}}" class="lbl-toggle">{{ category.name }}</label>
+  <div class="collapsible-content">
+    <div class="content-inner">
+	<table>
+   {% for bookmark in category.bookmarks %}
+		<tr>
+			<td>{{ bookmark.name }}</td>
+			<td>{{ bookmark.url }}</td>
+		</tr>
+   {% endfor %}
+	</table>
+    </div>
+  </div>
 {% endfor %}
+</div>
+

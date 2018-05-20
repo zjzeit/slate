@@ -1,9 +1,8 @@
 ---
-title: Misc Bookmarks
+name: AnotherCategory
 bookmarks:
-   - name: google
+   - name: google2
      url: http://www.google.com
-   - name: amazon
+   - name: amazon2
      url: http://www.amazon.com
 ---
-test
