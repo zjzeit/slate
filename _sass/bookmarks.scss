@@ -2,8 +2,11 @@
 Bookmarks
 ref:  https://alligator.io/css/collapsible/
 *******************************************************************************/
-.wrap-collabsible {
-  margin-bottom: 1.2rem 0;
+.wrap-collabsible{
+	margin-bottom: 1.2rem 0;
+	td{
+		padding: 1px;
+	}
 }
 
 input[type='checkbox'] {
@@ -16,7 +19,7 @@ input[type='checkbox'] {
   font-weight: bold;
   font-family: monospace;
   font-size: 1.2rem;
-  text-transform: uppercase;
+//  text-transform: uppercase;
   text-align: center;
 
   padding: 1rem;

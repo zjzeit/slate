@@ -1,7 +1,7 @@
 ---
 title: Bookmarks
 layout: default
-showNavBar: true
+navBarSize: small
 ---
 <div class="wrap-collabsible">
 {% for category in site.bookmarks %}
@@ -12,7 +12,7 @@ showNavBar: true
 	<table>
    {% for bookmark in category.bookmarks %}
 		<tr>
-			<td>{{ bookmark.name }}</td>
+			<td><a href="{{ bookmark.url }}">{{ bookmark.name }}</a></td>
 			<td>{{ bookmark.url }}</td>
 		</tr>
    {% endfor %}

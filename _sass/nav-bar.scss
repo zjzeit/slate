@@ -5,7 +5,8 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-	background-color: #d39641;
+//	background-color: #d39641;
+	background-color: $theme_color;
 }
 
 li {
@@ -19,16 +20,29 @@ li:last-child {
 }
 
 li a {
-	font-size: 40px;
     display: block;
-    color: #7c5825;
+    color: $theme_color_light;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
 }
 
+ul.large{
+	font-size: 40px;
+	a{
+		padding: 0px 15px 0px 15px;
+	}
+}
+
+ul.small{
+	font-size: 20px;
+	a{
+		padding: 0px 15px 0px 15px;
+	}
+}
+
 li a:hover:not(.active) {
-    background-color: #111;
+//    background-color: #111;
+    background-color: $theme_color_complement;
 }
 
 .active {

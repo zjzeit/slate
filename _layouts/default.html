@@ -31,9 +31,9 @@
     </div>
 
     <!-- NAV BAR -->
-    {% if page.showNavBar %}
+    {% if page.navBarSize %}
     <div id="nav_bar">
-	    <ul>
+	    <ul class="{{ page.navBarSize }}">
 		<li><a href="/"><i class="fas fa-home"></i></a></li>
 		<li><a href="./blog.html"><i class="fas fa-book-open"></i></a></li>
 		<li><a href="./bookmarks.html"><i class="far fa-bookmark"></i></a></li>
@@ -44,11 +44,13 @@
     {% endif %}
 
     <!-- MAIN CONTENT -->
+	{% if page.isEmpty == nil %}
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         {{ content }}
       </section>
     </div>
+	{% endif %}
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
