@@ -1,5 +1,7 @@
 @import "rouge-github";
 @import "bookmarks";
+@import "font-awesome";
+@import "nav-bar";
 
 /*******************************************************************************
 MeyerWeb Reset
@@ -195,7 +197,7 @@ blockquote {
 
 
 ul, ol, dl {
-  margin-bottom: 15px
+  //margin-bottom: 15px
 }
 
 ul {
@@ -360,31 +362,6 @@ Full-Width Styles
   border-bottom: 1px solid #111;
 }
 
-#nav_bar {
-	ul {
-	    list-style-type: none;
-	    margin: 0;
-	    padding: 0;
-	    overflow: hidden;
-	    background-color: #d39641;
-	}
-
-	li {
-	    float: left;
-	}
-
-	li a {
-	    display: block;
-	    color: white;
-	    text-align: center;
-	    padding: 14px 16px;
-	    text-decoration: none;
-	}
-
-	li a:hover {
-	    background-color: #111;
-	}
-}
 
 #main_content {
   padding: 40px;
